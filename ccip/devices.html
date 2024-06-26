@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cihazlar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            width: 250px;
+            height: 100vh;
+            background-color: #3056ff;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .navbar .menu {
+            padding: 20px;
+        }
+
+        .navbar .menu a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .navbar .menu a:hover {
+            background-color: #c1cdff;
+            color: #3056ff;
+        }
+
+        .navbar .profile {
+            padding: 20px;
+            border-top: 1px solid #575757;
+            background-color: #444;
+        }
+
+        .navbar .profile a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            width: calc(100% - 250px);
+        }
+
+        .content h1 {
+            color: #333;
+        }
+
+        .device-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .device-card {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .device-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .device-card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .device-card p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu">
+            <a href="user.html">Anasayfa</a>
+            <a href="devices.html">Cihazlar</a>
+            <a href="calendar.php">Takvim</a>
+        </div>
+        <div class="profile">
+            <a href="profile.html">Profil</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Cihazlar</h1>
+        <div class="device-grid">
+            <div class="device-card">
+                <img src="device1.jpg" alt="Cihaz 1">
+                <h2>Masa 1</h2>
+                <p>Masa 1 açıklaması burada yer alacak.</p>
+            </div>
+            <div class="device-card">
+                <img src="device2.jpg" alt="Cihaz 2">
+                <h2>Masa 2</h2>
+                <p>Masa 2 açıklaması burada yer alacak.</p>
+            </div>
+            <div class="device-card">
+                <img src="device3.jpg" alt="Cihaz 3">
+                <h2>Masa 3</h2>
+                <p>Masa 3 açıklaması burada yer alacak.</p>
+            </div>
+            <div class="device-card">
+                <img src="device4.jpg" alt="Cihaz 4">
+                <h2>Cihaz 4</h2>
+                <p>Cihaz 4 açıklaması burada yer alacak.</p>
+            </div>
+            <div class="device-card">
+                <img src="device5.jpg" alt="Cihaz 5">
+                <h2>Cihaz 5</h2>
+                <p>Cihaz 5 açıklaması burada yer alacak.</p>
+            </div>
+            <div class="device-card">
+                <img src="device6.jpg" alt="Cihaz 6">
+                <h2>Cihaz 6</h2>
+                <p>Cihaz 6 açıklaması burada yer alacak.</p>
+            </div>
+            <div class="device-card">
+                <img src="device7.jpg" alt="Cihaz 7">
+                <h2>Cihaz 7</h2>
+                <p>Cihaz 7 açıklaması burada yer alacak.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

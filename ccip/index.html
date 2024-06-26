@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratuvar Rezervasyon Sistemi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container sign-up-container">
+            <form action="register.php" method="POST">
+                <h1>Kayıt Ol</h1>
+                <input type="text" placeholder="Ad Soyad" name="name" required />
+                <input type="email" placeholder="Email" name="email" required />
+                <input type="password" placeholder="Şifre" name="password" required />
+                <button type="submit">Kayıt Ol</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="login.php" method="POST">
+                <h1>Giriş Yap</h1>
+                <input type="email" placeholder="Email" name="email" required />
+                <input type="password" placeholder="Şifre" name="password" required />
+                <button type="submit">Giriş Yap</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Tekrar Hoş Geldin!</h1>
+                    <p>Giriş yapmak için bilgilerini gir.</p>
+                    <button class="ghost" id="signIn">Giriş Yap</button>
+                </div>
+                <div id="register_div" class="overlay-panel overlay-right">
+                    <h1>Merhaba, Öğrenci!</h1>
+                    <p>Bilgilerini gir ve kayıt ol.</p>
+                    <button class="ghost" id="signUp">Kayıt Ol</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
