@@ -1,6 +1,6 @@
 Laboratuvar Randevu Sistemi
 
-Bu proje,  Laboratuvar için tasarlanmış bir cihaz rezervasyon sistemidir. Sistem iki tür kullanıcıya sahiptir: normal kullanıcılar ve yöneticiler.
+Bu proje,  Laboratuvar için tasarlanmış bir cihaz rezervasyon sistemidir. Sistem iki tür kullanıcıya sahiptir: kullanıcı (öğrenci) ve admin.
 Kullanıcı Türleri
 Yönetici (Admin)
 
