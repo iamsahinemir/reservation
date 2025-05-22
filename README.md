@@ -1,57 +1,106 @@
-Laboratuvar Randevu Sistemi
+# 🧪 Laboratory Reservation System | Laboratuvar Randevu Sistemi
 
-Bu proje,  Laboratuvar için tasarlanmış bir cihaz rezervasyon sistemidir. Sistem iki tür kullanıcıya sahiptir: normal kullanıcılar ve yöneticiler.
-Kullanıcı Türleri
-Yönetici (Admin)
+This project is a device reservation system designed for laboratory environments. The system supports two types of users: **Administrators** and **Regular Users**.
 
-- Kullanıcı ekleyebilir veya silebilir.
-- Diğer kullanıcılara yönetici ya da kullanıcı yetkisi verebilir.
-- Cihaz durumunu yönetebilir (aktif/pasif).
-- Rezervasyonları onaylayabilir veya reddedebilir.
-- Takvime erişebilir ve rezervasyonları görüntüleyebilir.
-- Yöneticiler için özel olarak rezervasyon yapabilir.
+Bu proje, laboratuvar ortamı için tasarlanmış bir cihaz rezervasyon sistemidir. Sistem, iki tür kullanıcıyı destekler: **Yöneticiler** ve **Normal Kullanıcılar**.
 
-Kullanıcı
+---
 
-- Sisteme giriş yapabilir.
-- Cihaz detaylarını görüntüleyebilir.
-- Rezervasyon oluşturabilir, takvime erişebilir.
-- Kendi rezervasyonlarını yönetebilir (görüntüle, sil).
-- Profil bilgilerini güncelleyebilir.
+## 👤 User Types | Kullanıcı Türleri
 
-Önemli Dosyalar ve Fonksiyonlar
+### 🔐 Administrator | Yönetici
 
-- **add_user.php**: Kullanıcı ekler.
-- **delete_user.php**: Kullanıcı siler.
-- **admin_dashboard.php**: Yönetici ana sayfası.
-- **admin_reservations.php**: Rezervasyon yönetimi.
-- **admin_rez.php**: Yöneticilerin rezervasyon yapmasını sağlar.
-- **admin_takvim.php**: Takvime erişim ve rezervasyon tarihlerini görüntüleme.
-- **admin_users.php**: Kullanıcıları yönetir ve yetki atar.
-- **calendar.php**: Rezervasyon oluşturur.
-- **devices.php**: Cihaz detaylarını görüntüler.
-- **make_reservation.php**: Hem kullanıcılar hem de yöneticiler için rezervasyon isteklerini gönderir.
-- **profile.php**: Kullanıcı profil bilgilerini yönetir.
-- **reservation.php**: Kullanıcı rezervasyonlarına erişim sağlar.
-- **takvim.php**: Takvime erişim sağlar.
-- **test_db.php**: Veritabanı bağlantı testini yapar.
-- **user.php**: Kullanıcı ana sayfası.
-- **index.php**: Giriş sayfası, kullanıcı kaydı ve şifre sıfırlama.
-- **login.php**: Kullanıcı girişi.
-- **register.php**: Kullanıcı kaydı.
-- **verification.php**: Kullanıcı hesap doğrulama için token oluşturur.
-- **logout.php**: Kullanıcının sistemden çıkış yapmasını sağlar.
-- **config.php**: Veritabanı bağlantısı.
-- **forgot_password.php**: Şifre sıfırlama işlevi.
-- **PHPMailer**: E-posta işlemleri için kullanılan kütüphane.
+* Add or remove users
 
-E-posta İşlemleri
+* Grant or revoke admin privileges
 
-Sistem, şifre sıfırlama, hesap doğrulama, rezervasyon onayı ve reddi gibi işlemler için e-postalar gönderir. Bu görevler için PHPMailer kütüphanesi kullanılır.
+* Manage device status (active/passive)
 
-Dizin Yapısı
+* Approve or reject reservations
 
-```
+* Access calendar and view reservations
+
+* Create reservations on behalf of others
+
+* Kullanıcı ekleyebilir veya silebilir
+
+* Diğer kullanıcılara yönetici ya da kullanıcı yetkisi verebilir
+
+* Cihaz durumunu yönetebilir (aktif/pasif)
+
+* Rezervasyonları onaylayabilir veya reddedebilir
+
+* Takvime erişebilir ve rezervasyonları görüntüleyebilir
+
+* Yöneticiler için özel olarak rezervasyon yapabilir
+
+---
+
+### 👥 User | Kullanıcı
+
+* Log into the system
+
+* View device details
+
+* Create reservations and access the calendar
+
+* Manage their own reservations (view/delete)
+
+* Update profile information
+
+* Sisteme giriş yapabilir
+
+* Cihaz detaylarını görüntüleyebilir
+
+* Rezervasyon oluşturabilir, takvime erişebilir
+
+* Kendi rezervasyonlarını yönetebilir (görüntüle, sil)
+
+* Profil bilgilerini güncelleyebilir
+
+---
+
+## 📂 Key Files & Functionalities | Önemli Dosyalar ve Fonksiyonlar
+
+| File                     | Description (English)               | Açıklama (Türkçe)                                     |
+| ------------------------ | ----------------------------------- | ----------------------------------------------------- |
+| `add_user.php`           | Adds new users                      | Yeni kullanıcı ekler                                  |
+| `delete_user.php`        | Deletes existing users              | Mevcut kullanıcıyı siler                              |
+| `admin_dashboard.php`    | Admin main dashboard                | Yönetici ana sayfası                                  |
+| `admin_reservations.php` | Manage reservations                 | Rezervasyon yönetimi                                  |
+| `admin_rez.php`          | Admin-specific reservation feature  | Yöneticiler için rezervasyon yapma                    |
+| `admin_takvim.php`       | Admin calendar view                 | Takvim erişimi ve rezervasyon tarihlerini görüntüleme |
+| `admin_users.php`        | Manage user roles and permissions   | Kullanıcıları yönetme ve yetki atama                  |
+| `calendar.php`           | Reservation creation interface      | Rezervasyon oluşturur                                 |
+| `devices.php`            | Displays device details             | Cihaz detaylarını görüntüler                          |
+| `make_reservation.php`   | Submit reservation requests         | Rezervasyon isteklerini gönderir                      |
+| `profile.php`            | Manage user profile                 | Kullanıcı profilini yönetir                           |
+| `reservation.php`        | Access user reservations            | Kullanıcının rezervasyonlarına erişim                 |
+| `takvim.php`             | General calendar access             | Takvim erişimi sağlar                                 |
+| `test_db.php`            | Database connection test            | Veritabanı bağlantısını test eder                     |
+| `user.php`               | Regular user dashboard              | Kullanıcı ana sayfası                                 |
+| `index.php`              | Login, register, and reset password | Giriş, kayıt ve şifre sıfırlama sayfası               |
+| `login.php`              | Handles user login                  | Kullanıcı girişi                                      |
+| `register.php`           | User registration                   | Yeni kullanıcı kaydı                                  |
+| `verification.php`       | Email token verification            | Hesap doğrulama token’ı üretir                        |
+| `logout.php`             | Logout functionality                | Kullanıcının çıkış yapmasını sağlar                   |
+| `config.php`             | Database configuration              | Veritabanı bağlantı ayarları                          |
+| `forgot_password.php`    | Reset password function             | Şifre sıfırlama işlemi                                |
+| `PHPMailer/`             | Email handling library              | E-posta işlemleri için kullanılan kütüphane           |
+
+---
+
+## 📧 Email Integration | E-posta İşlemleri
+
+The system sends emails for password resets, account verification, and reservation confirmations. This is handled using the **PHPMailer** library.
+
+Sistem, şifre sıfırlama, hesap doğrulama ve rezervasyon onayı gibi işlemler için e-posta gönderir. Bu işlemler **PHPMailer** kütüphanesi ile yapılır.
+
+---
+
+## 📁 Directory Structure | Dizin Yapısı
+
+```bash
 .
 ├── add_user.php
 ├── admin_dashboard.php
@@ -60,23 +109,16 @@ Dizin Yapısı
 ├── admin_takvim.php
 ├── admin_users.php
 ├── calendar.php
-├── ccip photos
-│   ├── fat_et.jpg
-│   ├── table_1.jpg
-│   └── ...
+├── ccip photos/
 ├── config.php
 ├── devices.php
-├── en
-│   ├── add_user.php
-│   └── ...
+├── en/
 ├── forgot_password.php
 ├── index.php
 ├── login.php
 ├── logout.php
 ├── make_reservation.php
-├── PHPMailer
-│   ├── LICENSE
-│   └── ...
+├── PHPMailer/
 ├── profile.php
 ├── README.md
 ├── register.php
@@ -89,4 +131,13 @@ Dizin Yapısı
 └── verification.php
 ```
 
-Bu proje Emir Esad Şahin tarafından yapılmıştır.
+---
+
+## 👨‍💻 Developed By | Geliştirici
+
+**Emir Esad Şahin**
+*This project was developed as part of an institutional laboratory automation solution.*
+
+---
+
+
